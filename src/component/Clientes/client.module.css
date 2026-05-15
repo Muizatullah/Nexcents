@@ -1,0 +1,29 @@
+ :root{
+--secondary-color: #4D4D4D;
+ }
+ .clientContainer{
+text-align: center;
+background-color: #fff;
+padding: 60px 80px;
+}
+.clientContainer h1{
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+.clientContainer p{
+    font-size: 15px;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+}
+.clientLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.clientLogo img{
+    width: 80px;
+    
+}

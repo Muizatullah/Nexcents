@@ -1,0 +1,38 @@
+:root{
+--primary-color: #18191F;
+--secondary-color: #4D4D4D;
+}
+.communityContainer{
+    padding: 60px 80px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.communityContent{
+    margin-bottom: 40px;
+     
+}
+.communityContent h2{
+    font-size: 36px;
+    color: var(--primary-color);
+    max-width: 500px;
+    margin: 0 auto 12px;
+}
+.communityContent p{
+    font-size: 20px;
+    color: var(--secondary-color);
+
+}
+.communityCards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: var(--shadow);
+}
+.card{
+    padding: 60px 80px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+
+}

@@ -1,0 +1,63 @@
+header{
+    background-color: var(--bg-color);
+     box-shadow: var(--shadow);
+    padding: 1rem;
+    position: sticky;
+    padding: 10px 0;
+    top: 0;
+}
+
+
+
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ .logo{
+   display: flex;
+   align-items: center;
+   gap: 8px;
+ }
+.logo Image{
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    
+}
+
+ .header-container{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+ }
+
+ .navLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+}
+.navButton button:first-child {
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navButton button:last-child {
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
