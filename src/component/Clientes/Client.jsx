@@ -1,4 +1,3 @@
-
 import styles from "./client.module.css"
 import clientLogo1 from "../../assets/client1.png"
 import clientLogo2 from "../../assets/client2.png"

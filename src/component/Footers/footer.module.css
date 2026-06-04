@@ -1,43 +1,39 @@
-:root{
-    --primary-color: #18191F;
-    --secondary-color: #4D4D4D;
-}
-.heroContainer{
+.footerContainer{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     align-items: center;
     padding: 60px 80px;
-    background-color: #fff;
+    gap: 60px;
+     flex-direction: row;
+}
+.footerLeft{
+    flex: 1;
+    display: flex;
 
 }
-.heroLeft {
-  flex: 1;
-  display: flex;
- justify-content: flex-start;
-
+.footerLeft img{
+    width: 100%;
+    max-width: 500px;
 }
-.heroLeft img{
-  width: 100%;
-  max-width: 500px;
-}
-.heroRight{
+.footerRight {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-left: 40px;
+
 }
-.heroRight p{
-  font-size: 16px;
-  color: var(--secondary-color);
+.footerRight p {
+    font-size: 16px;
+    color: var(--secondary-color);
 }
-.heroRight h2{
-font-size: 24px;
-color: var(--secondary-color);
+.footerRight h2 {
+    font-size: 36px;
+    color: var(--secondary-color);
 }
 
-.heroButton {
+.footerButton {
+
   color: #fff;
   background-color: var(--btn-color);
   border: none;
@@ -46,47 +42,54 @@ color: var(--secondary-color);
   font-size: 16px;
   padding: 12px 20px;
   width: fit-content;
+  margin-top :24px;
+  display: block;
 }
 
-/* @media query  start*/
+
+
+/* @media query */
 @media (max-width: 700px) {
-    .heroContainer {
+    .footerContainer {
         flex-direction: column;
         padding: 40px 20px;
         gap: 32px;
         text-align: center;
     }
 
-    .heroLeft {
+    .footerLeft {
         justify-content: center;
     }
 
-    .heroLeft img {
+    .footerLeft img {
         max-width: 100%;
     }
 
-    .heroRight {
+    .footerRight {
         padding-left: 0;
         align-items: center;
     }
 
-    .heroRight h2 {
-        font-size: 20px;
+    .footerRight h2 {
+        font-size: 24px;
     }
 
-    .heroRight p {
+    .footerRight p {
         font-size: 14px;
     }
-}
 
-@media (max-width: 400px) {
-    .heroRight h2 {
-        font-size: 18px;
-    }
-
-    .heroButton {
+    .footerButton {
         width: 100%;
         text-align: center;
     }
 }
-/* media query end */
+
+@media (max-width: 400px) {
+    .footerRight h2 {
+        font-size: 20px;
+    }
+
+    .footerRight p {
+        font-size: 13px;
+    }
+}

@@ -42,6 +42,12 @@
   padding: 12px 20px;
   width: fit-content;
 }
+
+.heroButton .btn:hover{
+  background-color: #fff;
+  color:  #1B7A43E3;
+}
+
 .heroRight{
   flex: 1;
   display: flex;
@@ -52,3 +58,49 @@
   max-width: 400px;
 }
 
+
+
+
+/* @media query */
+@media (max-width: 700px) {
+    .heroContainer {
+        flex-direction: column;
+        padding: 40px 20px;
+        min-height: auto;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .heroLeft {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .heroLeft h2 {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .heroRight {
+        justify-content: center;
+    }
+
+    .heroRight img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .heroLeft h2 {
+        font-size: 1.6rem;
+    }
+
+    .heroLeft p {
+        font-size: 0.9rem;
+    }
+
+    .heroButton {
+        width: 100%;
+        text-align: center;
+    }
+}

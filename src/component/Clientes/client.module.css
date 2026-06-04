@@ -24,6 +24,38 @@ padding: 60px 80px;
     gap: 20px;
 }
 .clientLogo img{
-    width: 80px;
+    width: 40px;
+    height: 40px;
     
+}
+
+/* @media query */
+@media (max-width: 768px) {
+    .clientContainer {
+        padding: 40px 20px;
+    }
+
+    .clientContainer h1 {
+        font-size: 24px;
+    }
+
+    .clientLogo {
+        justify-content: center;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .clientContainer h1 {
+        font-size: 20px;
+    }
+
+    .clientContainer p {
+        font-size: 13px;
+    }
+
+    .clientLogo img {
+        width: 32px;
+        height: 32px;
+    }
 }

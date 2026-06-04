@@ -1,0 +1,147 @@
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+    background-color: #263238;
+    gap: 60px;
+}
+.footerLeft{
+    max-width: 260px;
+    
+
+}
+.footerLogo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.footerLogo img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+
+}
+.footerLogo h3{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 20px;
+}
+.footerIcons {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+.footerIcons a {
+    color: #ffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.footerIcons a:hover{
+    columns: #4CAF4F;
+}
+.footerLinks {
+    display: flex;
+    gap: 60px;
+}
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footerContent h4{
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.footerContent a{
+  color: #b0bec5;
+  font-size: 0.88rem;
+  text-decoration: none;  
+  transition: 0.3s;
+}
+.footerContent a:hover{
+    color: #ffff;
+}
+.emailInput {
+    display: flex;
+    align-items: center;
+    background-color: #D9DBE1;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 4px 8px;
+}
+.emailInput input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    padding: 8px;
+    width: 180px;
+}
+.emailInput input ::placeholder{
+    color: #FFFFFF;
+}
+.emailInput button {
+    background: transparent;
+    border: none;
+    color: #4CAF4F ;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+}
+.emailInput button:hover {
+    color: #ffff;
+}
+
+
+
+@media (max-width: 700px) {
+    .footerContainer {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .footerLeft {
+        max-width: 100%;
+    }
+
+    .footerLinks {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .emailInput {
+        width: 100%;
+    }
+
+    .emailInput input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .footerLogo h3 {
+        font-size: 1rem;
+    }
+
+    .footerContent h4 {
+        font-size: 0.95rem;
+    }
+
+    .footerContent a {
+        font-size: 0.82rem;
+    }
+
+    .footerIcons a {
+        font-size: 1.2rem;
+    }
+}
