@@ -1,63 +1,41 @@
-import market1 from "./assets/market1.png"
-import market2 from "./assets/market2.png"
-import market3 from "./assets/market3.png"
-
+import market1 from "./assets/market1.png";
+import market2 from "./assets/market2.png";
+import market3 from "./assets/market3.png";
 
 export const navBarData = [
   {
     id: 1,
     pathName: "Home",
-    PathUrl: "/Home",
+    pathUrl: "/",
   },
   {
     id: 2,
     pathName: "Services",
-    PathUrl: "/Services",
+    pathUrl: "/services",
   },
   {
     id: 3,
     pathName: "Features",
-    PathUrl: "/Features",
+    pathUrl: "/features",
   },
   {
     id: 4,
     pathName: "Products",
-    PathUrl: "/products",
+    pathUrl: "/p",
   },
   {
     id: 5,
     pathName: "Testimonials",
-    PathUrl: "/Testimonials",
+    pathUrl: "/testimonials",
   },
   {
     id: 6,
     pathName: "FAQ",
-    PathUrl: "/FAQ",
+    pathUrl: "/fAQ",
   },
 ];
-// export const communityData =[
-//     {
-//         id: 1,
-//         imgSrc: communityImage,
-//         title: "Membership Organisations",
-//         desc: "Our membership management software provides full automation of membership renewals and payments",
-//     },
-//     {
-//         id: 2,
-//         imgSrc: communityImage2,
-//         title: "National Associations",
-//         desc: "Our membership management software provides full automation of membership renewals and payments",
-//     },
-//     {
-//         id: 3,
-//         imgSrc: communityImage3,
-//         title: "Clubs And Groups",
-//         desc: "Our membership management software provides full automation of membership renewals and payments",
-//     },
-//]
 
-
- export const caringData = [
+export const caringData = [
   {
     id: 1,
     image: market1,
@@ -67,11 +45,12 @@ export const navBarData = [
   {
     id: 2,
     image: market2,
-    title: "What are your safeguarding responsibilities and how can you manage them?",
+    title:
+      "What are your safeguarding responsibilities and how can you manage them?",
   },
   {
-    id:3,
+    id: 3,
     image: market3,
-    title:"Revamping the Membership Model with Triathlon Australia",
+    title: "Revamping the Membership Model with Triathlon Australia",
   },
 ];

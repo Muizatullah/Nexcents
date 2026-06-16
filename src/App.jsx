@@ -1,34 +1,26 @@
-import Navbar from './component/Navbar/navbar'
-import Hero from './component/Hero/hero'
-import Clientes from './component/Clientes/Client'  
-import Community from './component/Community/community'
-import Hero2 from './component/Hero2/hero2'
-import Business from './component/Business/busines'
-import Footers from './component/Footers/footer'
-import Customers from './component/Customers/customer'
-import Marketing from './component/Marketing/marketing'
-import Cta from './component/Cta/cta'
-import './App.css'
-import Footer2 from './component/Footer2/footer2'
+import "./App.css";
+import { Routes, Route } from "react-router";
+import {HomePage, Services, Features, Products, Testimonial, Faq} from "./Pages/index.jsx";
 
+
+
+import react from "react";
 function App() {
-
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Clientes />
-      <Community />
-      <Hero2 />
-      <Business/>
-      <Footers/>
-      <Customers/>
-      <Marketing/>
-      <Cta/>
-      <Footer2/>
       
+      <Routes>
+         <Route path="/" index element={<HomePage />} />
+         <Route path="/services" element={<Services />} />
+         <Route path="/features" element={<Features />} />
+         <Route path="/products" element={<Products/>} />
+         <Route path="/testimonials" element={<Testimonial/>} />
+         <Route path="/faq" element={<Faq/>} />
+
+
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
