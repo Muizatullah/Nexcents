@@ -1,0 +1,33 @@
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+}
+
+.title {
+  font-size: 13px;
+  color: #7d7d7d;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 6px;
+}

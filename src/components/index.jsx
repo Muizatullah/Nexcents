@@ -10,6 +10,8 @@ import Hero2 from "./hero2/Hero2.jsx";
 import Marketing from "./marketing/Marketing.jsx";
 import Navbar from "./navbar/Navbar.jsx";
 import MainLayout from "./layout/MainLayout.jsx"
+import Sidebar from "./Sidebar/Sidebar.jsx";
+import StatCard from "./statcard/StatCard.jsx";
 
 export {
   Navbar,
@@ -24,4 +26,6 @@ export {
   Client,
   Busines,
   MainLayout,
+  Sidebar,
+  StatCard,
 };

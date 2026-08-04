@@ -21,7 +21,7 @@ export const navBarData = [
   {
     id: 4,
     pathName: "Products",
-    pathUrl: "/p",
+    pathUrl: "/products",
   },
   {
     id: 5,

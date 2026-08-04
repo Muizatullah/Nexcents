@@ -7,6 +7,9 @@
     min-height: 80vh;
     background-color: var(--bg-color);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+    
 }
 .heroLeft {
   flex: 1;
@@ -67,6 +70,9 @@
         min-height: auto;
         text-align: center;
         gap: 32px;
+
+        width: 1200px;
+        margin: 0 auto;
     }
 
     .heroLeft {

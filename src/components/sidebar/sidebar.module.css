@@ -1,0 +1,55 @@
+
+ .sidebar {
+  width: 260px;
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: red;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link,
+.active {
+  text-decoration: none;
+  color: #6d6d6d;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  background: #f4f6ff;
+}
+
+.active {
+  background: #e8eeff;
+  color: #4f7cff;
+  font-weight: 600;
+}
+
+.support {
+  margin-top: auto;
+}
+
+.support p {
+  margin-bottom: 15px;
+  color: gray;
+  font-size: 14px;
+}
