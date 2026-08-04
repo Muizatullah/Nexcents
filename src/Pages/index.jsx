@@ -1,5 +1,5 @@
 import HomePage from "./home/HomePage";
-import Services from "./Services/Services";
+import Services from "./services/Services";
 import Features from "./features/Features";
 import Products from "./products/Products";
 import Testimonial from "./testimonials/Testimonial";

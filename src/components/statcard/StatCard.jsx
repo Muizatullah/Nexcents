@@ -1,6 +1,4 @@
-
-import styles from "./StatCard.module.css";
-
+import styles from "./statcard.module.css";
 const StatCard = ({ title, value, subtitle, children }) => {
   return (
     <div className={styles.card}>

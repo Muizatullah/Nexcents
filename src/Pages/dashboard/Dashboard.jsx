@@ -1,5 +1,5 @@
 import Sidebar from "../../components/Sidebar/Sidebar";
-import styles from "./Dashboard.module.css";
+import styles from "./dashboard.module.css";
 
 const Dashboard = () => {
   return (
