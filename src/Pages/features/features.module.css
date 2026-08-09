@@ -7,7 +7,7 @@
 .hero {
   background: #f4f6f4;
   padding: 80px 100px;
-  min-height: 260px;
+  min-height: 300px;
   display: flex;
   align-items: center;
 }
@@ -22,11 +22,27 @@
 .heroText p {
   color: #555;
   font-size: 1rem;
-  margin: 0;
+  margin: 0 0 28px;
 }
 
 .green {
   color: #4caf50;
+}
+
+.btn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #388e3c;
 }
 
 /* STATS */
@@ -59,11 +75,10 @@
   display: block;
 }
 
-/* SLIDER SECTION */
-.sliderSection {
+/* SECTION */
+.section {
   padding: 72px 100px;
-  background: #f4f6f4;
-  text-align: center;
+  background: #fff;
 }
 
 .sectionTitle {
@@ -80,121 +95,7 @@
   margin: 0 0 48px;
 }
 
-.slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  margin-top: 36px;
-}
-
-.arrow {
-  background: #fff;
-  border: 1.5px solid #e8e8e8;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  font-size: 1.4rem;
-  cursor: pointer;
-  color: #4caf50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-  flex-shrink: 0;
-}
-
-.arrow:hover {
-  background: #4caf50;
-  color: #fff;
-  border-color: #4caf50;
-}
-
-.sliderCard {
-  background: #fff;
-  border-radius: 16px;
-  padding: 40px 48px;
-  max-width: 560px;
-  width: 100%;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-
-.sliderAvatar {
-  font-size: 48px;
-}
-
-.sliderText {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.75;
-  font-style: italic;
-  margin: 0;
-  text-align: center;
-}
-
-.sliderName {
-  font-weight: 800;
-  font-size: 0.95rem;
-  color: #1a1a1a;
-}
-
-.sliderRole {
-  font-size: 0.82rem;
-  color: #888;
-}
-
-/* DOTS */
-.dots {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-top: 24px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: none;
-  background: #ccc;
-  cursor: pointer;
-  transition: background 0.2s;
-  padding: 0;
-}
-
-.dotActive {
-  background: #4caf50;
-  width: 28px;
-  border-radius: 99px;
-}
-
-/* STARS */
-.stars {
-  display: flex;
-  gap: 2px;
-}
-
-.starFilled {
-  color: #f59e0b;
-  font-size: 1rem;
-}
-
-.starEmpty {
-  color: #ddd;
-  font-size: 1rem;
-}
-
-/* ALL CARDS SECTION */
-.section {
-  padding: 72px 100px;
-  background: #fff;
-}
-
-/* GRID 3 → 2 → 1 */
+/* GRID — 3 cols → 2 → 1 */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -206,9 +107,6 @@
   border: 1.5px solid #e8e8e8;
   border-radius: 12px;
   padding: 28px 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
   transition: box-shadow 0.2s, border-color 0.2s;
 }
 
@@ -217,35 +115,22 @@
   border-color: #4caf50;
 }
 
-.cardTop {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.avatar {
-  font-size: 36px;
-  flex-shrink: 0;
-}
-
-.name {
+.icon {
+  font-size: 28px;
   display: block;
-  font-weight: 800;
-  font-size: 0.95rem;
+  margin-bottom: 14px;
 }
 
-.role {
-  display: block;
-  font-size: 0.8rem;
-  color: #888;
-  margin-top: 2px;
+.card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 10px;
 }
 
-.cardText {
-  color: #555;
+.card p {
+  color: #666;
   font-size: 0.88rem;
-  line-height: 1.7;
-  font-style: italic;
+  line-height: 1.65;
   margin: 0;
 }
 
@@ -310,17 +195,13 @@
 
 /* ── RESPONSIVE ───────────────────────── */
 
-/* Tablet */
+/* Tablet: 2 columns */
 @media (max-width: 1024px) {
   .hero,
   .section,
   .cta,
-  .sliderSection {
-    padding: 60px 48px;
-  }
-
   .stats {
-    padding: 36px 48px;
+    padding: 60px 48px;
   }
 
   .grid {
@@ -330,24 +211,15 @@
   .heroText h1 {
     font-size: 2.2rem;
   }
-
-  .sliderCard {
-    padding: 32px 32px;
-  }
 }
 
-/* Mobile */
+/* Mobile: 1 column */
 @media (max-width: 640px) {
   .hero,
   .section,
   .cta,
-  .sliderSection {
-    padding: 40px 20px;
-  }
-
   .stats {
-    padding: 32px 20px;
-    gap: 20px;
+    padding: 40px 20px;
   }
 
   .heroText h1 {
@@ -362,22 +234,16 @@
     grid-template-columns: 1fr;
   }
 
-  .slider {
-    gap: 12px;
+  .stats {
+    gap: 20px;
   }
 
-  .sliderCard {
-    padding: 28px 20px;
+  .statValue {
+    font-size: 1.6rem;
   }
 
-  .sliderText {
-    font-size: 0.92rem;
-  }
-
-  .arrow {
-    width: 36px;
-    height: 36px;
-    font-size: 1.1rem;
+  .sectionTitle {
+    font-size: 1.4rem;
   }
 
   .cta h2 {
@@ -390,12 +256,9 @@
   }
 
   .btnWhite,
-  .btnOutline {
+  .btnOutline,
+  .btn {
     width: 100%;
     text-align: center;
-  }
-
-  .sectionTitle {
-    font-size: 1.4rem;
   }
 }

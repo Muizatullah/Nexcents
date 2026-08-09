@@ -1,4 +1,4 @@
-/* LoginPage.module.css */
+/* LoginPage.module.css
 .container {
   min-height: 100vh;
   display: flex;
@@ -64,7 +64,7 @@
 }
 
 
-/* @media query */
+
 @media (max-width: 768px) {
   .card {
     max-width: 350px;
@@ -111,5 +111,332 @@
 
   .footer {
     font-size: 14px;
+  }
+}
+ */
+.page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── LEFT PANEL ─────────────────────── */
+.left {
+  flex: 1;
+  background: #4caf50;
+  padding: 48px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brandIcon {
+  font-size: 24px;
+}
+
+.brandName {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.leftContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.leftContent h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 16px;
+  color: #fff;
+}
+
+.green {
+  color: #c8e6c9;
+}
+
+.leftContent p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.98rem;
+  line-height: 1.75;
+  margin: 0 0 32px;
+  max-width: 380px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featureItem {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+/* ── RIGHT PANEL ─────────────────────── */
+.right {
+  flex: 1;
+  background: #f4f6f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0 0 28px;
+}
+
+/* ERROR */
+.error {
+  background: #fff3f3;
+  border: 1.5px solid #f44336;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #d32f2f;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot {
+  font-size: 0.8rem;
+  color: #4caf50;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  background: #fafafa;
+}
+
+.input:focus {
+  border-color: #4caf50;
+  background: #fff;
+}
+
+/* PASSWORD TOGGLE */
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordWrapper .input {
+  padding-right: 44px;
+}
+
+.eyeBtn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  line-height: 1;
+}
+
+/* REMEMBER ME */
+.rememberRow {
+  display: flex;
+  align-items: center;
+}
+
+.checkLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.checkbox {
+  accent-color: #4caf50;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+/* SUBMIT BUTTON */
+.btn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+}
+
+.btn:hover:not(:disabled) {
+  background: #388e3c;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* SPINNER */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* REGISTER LINK */
+.register {
+  text-align: center;
+  margin: 24px 0 0;
+  font-size: 0.88rem;
+  color: #888;
+}
+
+.registerLink {
+  color: #4caf50;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.registerLink:hover {
+  text-decoration: underline;
+}
+
+/* ── RESPONSIVE ─────────────────────── */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .left {
+    padding: 40px 36px;
+  }
+
+  .leftContent h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 40px 32px;
+  }
+}
+
+/* Mobile — stack vertically, hide left panel */
+@media (max-width: 640px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 28px 24px;
+    min-height: auto;
+  }
+
+  .leftContent {
+    padding: 20px 0 0;
+  }
+
+  .leftContent h1 {
+    font-size: 1.6rem;
+  }
+
+  .features {
+    display: none;
+  }
+
+  .right {
+    padding: 32px 20px;
+    background: #f4f6f4;
+  }
+
+  .card {
+    padding: 32px 24px;
+    box-shadow: none;
   }
 }
