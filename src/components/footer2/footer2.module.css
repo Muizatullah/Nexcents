@@ -111,7 +111,8 @@
         padding: 40px 20px;
         gap: 40px;
 
-        width: 1200px;
+        width: 100%;
+        box-sizing: border-box;
         margin: 0 auto;
     }
 
@@ -126,9 +127,16 @@
 
     .emailInput {
         width: 100%;
+        box-sizing: border-box;
+        max-width: 100%;
     }
 
     .emailInput input {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+     .footerContent {
         width: 100%;
     }
 }

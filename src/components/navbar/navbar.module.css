@@ -1,7 +1,8 @@
 /* header style */
 header{
     background-color: var(--bg-color);
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
+    box-sizing: border-box;
     padding: 1rem;
     position: sticky;
     padding: 10px 0;
@@ -19,7 +20,10 @@ header{
     align-items: center;
     position: relative;
     max-width: 1200px;
-    /* width: 100%; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
     
   
 }
@@ -119,10 +123,9 @@ header{
 /* media query  start*/
 @media (max-width: 768px) {
     .navContainer {
-        /* padding: 10px 20px; */
+        padding: 0px 16px;
 
-        /* width: 1200px;
-        margin: 0 auto; */
+     width: 100%;
     }
 
     .navLinks {

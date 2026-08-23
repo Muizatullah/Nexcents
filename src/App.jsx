@@ -1,11 +1,17 @@
+// import { useLocation } from "react-router";
 import "./App.css";
 import { Routes, Route } from "react-router";
 import {HomePage, Services, Features, Products, Testimonial, Faq, Login, SignUp, Dashboard, DashboardLayout, Reports, Library , People, Activities, GetStarted, Settings} from "./Pages/index.jsx";
 
 
 
+
+
+
 import react from "react";
 function App() {
+
+
   return (
     <>
       
@@ -34,6 +40,7 @@ function App() {
 
 
       </Routes>
+        
     </>
   );
 }

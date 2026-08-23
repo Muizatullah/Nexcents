@@ -1,4 +1,4 @@
-
+/* 
 .container {
   min-height: 100vh;
   display: flex;
@@ -61,4 +61,434 @@
 
 .link {
   color: #18191F;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --nx-green: #3fa34d;
+  --nx-green-dark: #2f8a3d;
+  --nx-ink: #101b12;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f6f4;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ---------- Layout ---------- */
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  .body {
+    flex-direction: row;
+  }
+}
+
+/* ---------- Hero panel ---------- */
+
+.hero {
+  background: var(--nx-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 56px 32px;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    width: 50%;
+    padding: 0 64px;
+  }
+}
+
+.heroInner {
+  max-width: 520px;
+  opacity: 0;
+  animation: nx-fade-up 0.5s ease forwards;
+}
+
+.heroLogo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.heroLogoIcon {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.heroLogoText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.headline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 24px;
+}
+
+@media (min-width: 1024px) {
+  .headline {
+    font-size: 60px;
+  }
+}
+
+.headlineDark {
+  color: var(--nx-ink);
+}
+
+.headlineLight {
+  color: #ffffff;
+}
+
+.heroText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e7f3e9;
+  margin: 0 0 32px;
+}
+
+.featureList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.featureCheck {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: var(--nx-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ---------- Form section ---------- */
+
+.formSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 24px;
+}
+
+@media (min-width: 1024px) {
+  .formSection {
+    width: 50%;
+    padding: 40px 24px;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(16, 27, 18, 0.08);
+  padding: 40px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--nx-ink);
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #6b7570;
+  margin: 0 0 32px;
+  line-height: 1.6;
+}
+
+/* ---------- Fields ---------- */
+
+.field {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--nx-ink);
+  margin-bottom: 6px;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  padding: 0 44px 0 16px;
+  font-size: 15px;
+  border: 2px solid #e5e7e5;
+  color: var(--nx-ink);
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.15s ease;
+  font-family: inherit;
+}
+
+.input:focus {
+  border-color: var(--nx-green);
+}
+
+.inputError {
+  border-color: #d64545;
+}
+
+.inputError:focus {
+  border-color: #d64545;
+}
+
+.inputValid {
+  border-color: var(--nx-green);
+}
+
+.endAdornment {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.toggleBtn {
+  padding: 4px;
+  border-radius: 4px;
+  background: transparent;
+  border: none;
+  color: #8a968f;
+  cursor: pointer;
+  display: flex;
+}
+
+.errorText {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #c0392b;
+  margin: 6px 0 0;
+}
+
+/* ---------- Password strength ---------- */
+
+.strengthWrap {
+  margin: -12px 0 20px;
+}
+
+.strengthBar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.strengthSegment {
+  height: 4px;
+  flex: 1;
+  border-radius: 999px;
+  background: #e7e2d6;
+  transition: background 0.3s ease;
+}
+
+.strength0 {
+  background: #d64545;
+}
+.strength1 {
+  background: #d97706;
+}
+.strength2 {
+  background: #c9a227;
+}
+.strength3 {
+  background: var(--nx-green-dark);
+}
+.strength4 {
+  background: var(--nx-green);
+}
+
+.strengthLabel {
+  font-size: 12px;
+  color: #9aa39d;
+}
+
+/* ---------- Checkbox / terms ---------- */
+
+.checkboxRow {
+  margin-bottom: 28px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6b7570;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--nx-green);
+  cursor: pointer;
+}
+
+.checkboxError {
+  font-size: 12px;
+  color: #c0392b;
+  margin: 6px 0 0 28px;
+}
+
+.inlineLink {
+  font-weight: 600;
+  color: var(--nx-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ---------- Submit ---------- */
+
+.submitBtn {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--nx-green);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: var(--nx-green-dark);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.spinner {
+  animation: nx-spin 0.8s linear infinite;
+}
+
+.footerText {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7570;
+  margin: 28px 0 0;
+}
+
+/* ---------- Success state ---------- */
+
+.successIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: #e7f3e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.link {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--nx-green-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+.fade {
+  opacity: 0;
+  animation: nx-fade-up 0.5s ease forwards;
+}
+
+/* ---------- Animations ---------- */
+
+@keyframes nx-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nx-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroInner,
+  .fade {
+    animation: none;
+    opacity: 1;
+  }
+  .spinner {
+    animation: none;
+  }
 }

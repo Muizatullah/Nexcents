@@ -1,4 +1,4 @@
-.dashboard {
+/* .dashboard {
   display: flex;
   min-height: 100vh;
   background: #f5f5f7;
@@ -111,4 +111,131 @@
   border-radius: 18px;
   min-height: 250px;
   padding: 20px;
+} */
+
+
+
+:root {
+  --nx-green: #3fa34d;
+  --nx-green-dark: #2f8a3d;
+  --nx-green-soft: #eaf6ec;
+  --nx-ink: #101b12;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f4f6f4;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ---------- Sidebar ---------- */
+
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 2px rgba(16, 27, 18, 0.04);
+}
+
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  margin-bottom: 32px;
+}
+
+.brandIcon {
+  color: var(--nx-green);
+  fill: var(--nx-green);
+}
+
+.brandText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--nx-ink);
+}
+
+.nav,
+.navFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebarSpacer {
+  flex: 1;
+  min-height: 24px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #5c6b64;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.navIcon {
+  color: #9aa39d;
+  transition: color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.navItem:hover {
+  background: #f4f6f4;
+  color: var(--nx-ink);
+}
+
+.navItemActive {
+  background: var(--nx-green-soft);
+  color: var(--nx-green-dark);
+}
+
+.navItemActive .navIcon {
+  color: var(--nx-green-dark);
+}
+
+/* ---------- Content ---------- */
+
+.content {
+  flex: 1;
+  min-width: 0;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 40px;
+  box-shadow: 0 1px 2px rgba(16, 27, 18, 0.04);
+}
+
+@media (max-width: 640px) {
+  .content {
+    padding: 24px 20px;
+  }
 }

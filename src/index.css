@@ -15,14 +15,26 @@
 
 body{
   font-family: 'Inter', sans-serif;
-  width: 100%;
+  /* width: 100%; */
+    overflow-x: hidden;
+}
+html {
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
 }
 
-.container{
+/* .container{
   max-width: 1200px;
   margin: 0 auto;
   padding:0 1.5rem;
   width: 100%;
+  box-sizing: border-box;
+} */
+ .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-inline: 1.5rem;
   box-sizing: border-box;
 }
 
@@ -37,9 +49,15 @@ a{
 }
 
 img{
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+   max-width: 100%;
+  /* height: auto; */
   display: block;
 }
 
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+}
