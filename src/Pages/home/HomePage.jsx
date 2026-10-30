@@ -1,10 +1,10 @@
 import {
-  Navbar,
+  // Navbar,
   Marketing,
   Hero2,
   Hero,
   Footer,
-  Footer2,
+  // Footer2,
   Customer,
   Cta,
   Community,

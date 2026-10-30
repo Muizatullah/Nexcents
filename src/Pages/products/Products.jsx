@@ -60,14 +60,14 @@ export default function Products() {
       </section>
 
       {/* CTA */}
-      <section className={styles.cta}>
+      {/* <section className={styles.cta}>
         <h2>Not sure which product fits?</h2>
         <p>Talk to our team and we'll match you with the right solution for your farm.</p>
         <div className={styles.ctaBtns}>
           <button className={styles.btnWhite}>Talk to Sales</button>
           <button className={styles.btnOutline}>Compare Products</button>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );

@@ -46,14 +46,14 @@ export default function Features() {
       </section>
 
       {/* CTA */}
-      <section className={styles.cta}>
+      {/* <section className={styles.cta}>
         <h2>Start using Nexcent today</h2>
         <p>Join thousands of teams already growing with us.</p>
         <div className={styles.ctaBtns}>
           <button className={styles.btnWhite}>Sign Up Free</button>
           <button className={styles.btnOutline}>See Pricing</button>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );

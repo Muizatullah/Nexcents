@@ -74,14 +74,14 @@ export default function FAQ() {
       </section>
 
       {/* CTA */}
-      <section className={styles.cta}>
+      {/* <section className={styles.cta}>
         <h2>Ready to grow smarter with Nexcent?</h2>
         <p>Join over 2,400 farmers already on the platform.</p>
         <div className={styles.ctaBtns}>
           <button className={styles.btnWhite}>Start Free Trial</button>
           <button className={styles.btnOutline}>Talk to Sales</button>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );

@@ -8,7 +8,7 @@ import {HomePage, Services, Features, Products, Testimonial, Faq, Login, SignUp,
 
 
 
-import react from "react";
+// import react from "react";
 function App() {
 
 
@@ -23,7 +23,7 @@ function App() {
          <Route path="/testimonials" element={<Testimonial/>} />
          <Route path="/faq" element={<Faq/>} />
          <Route path="/login" element={<Login/>} />
-         <Route path="/sign-up" element={<SignUp/>} />
+         <Route path="/signUp" element={<SignUp/>} />
           <Route path="dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
            <Route path="reports" element={<Reports />} />

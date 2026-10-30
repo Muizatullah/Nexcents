@@ -35,11 +35,11 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className={styles.cta}>
+      {/* <section className={styles.cta}>
         <h2>Ready to grow smarter?</h2>
         <p>Book a free consultation with one of our agronomists.</p>
         <button className={styles.btnWhite}>Book Free Call</button>
-      </section>
+      </section> */}
 
     </div>
   );

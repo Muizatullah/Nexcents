@@ -92,14 +92,14 @@ export default function Testimonial() {
       </section>
 
       {/* CTA */}
-      <section className={styles.cta}>
+      {/* <section className={styles.cta}>
         <h2>Join thousands of farmers growing with Nexcent</h2>
         <p>Start your free trial today — no credit card required.</p>
         <div className={styles.ctaBtns}>
           <button className={styles.btnWhite}>Get Started Free</button>
           <button className={styles.btnOutline}>Read More Stories</button>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );
